@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HelloHybrid</title>
+
+    <!-- HelloHybrid references -->
+    <link href="css/index.css" rel="stylesheet" />    
+    
+    <script src="scripts/mithril.min.js"></script>
+    <script src="scripts/velocity.min.js"></script>
+    <!--http://lhorie.github.io/mithril-blog/velocity-animations-in-mithril.html-->
+
+    <script src="scripts/pagesJSON.js"></script>
+    <script src="scripts/app.model.js"></script>
+    <script src="scripts/app.controller.js"></script>
+    <script src="scripts/app.view.js"></script>
+</head>
+<body>
+    <p>Hello, your application is ready!</p>
+    <h3>Results</h3>
+    <div id="results"></div>
+    <h3>Pages</h3>
+    <div id="pages"></div>
+    <h3>People</h3>
+    <div id="people"></div>
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script>
+
+        m.module(document.getElementById('results'), todo);
+        m.module(document.getElementById('pages'), app);
+        m.module(document.getElementById('people'), person);
+    </script>
+</body>
+</html>
