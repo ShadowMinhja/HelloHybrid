@@ -98,14 +98,16 @@
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="app\controllers\app.controller.js" />
+    <Content Include="app\models\app.model.js" />
+    <Content Include="app\routes\app.route.js" />
+    <Content Include="app\views\app.view.js" />
+    <Content Include="build\hello.js" />
     <Content Include="json\pages.json" />
-    <Content Include="scripts\app.controller.js" />
-    <Content Include="scripts\app.model.js" />
-    <Content Include="scripts\app.view.js" />
     <Content Include="scripts\pagesJSON.js" />
     <Content Include="scripts\test.js" />
     <Content Include="scripts\velocity.min.js" />
-    <Folder Include="images\" />
+    <Content Include="src\hello.js" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
     <Folder Include="merges\ios\" />
