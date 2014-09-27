@@ -26,3 +26,10 @@ person.Person = function (data) {
 }
 
 person.PersonList = Array;
+
+//CLEAR Module
+var clearModule = {};
+clearModule.controller = function () {
+
+};
+clearModule.view = function () { };

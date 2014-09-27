@@ -19,8 +19,12 @@
 </head>
 <body>
     <p>Hello, your application is ready!</p>
-    <h3>Results</h3>
-    <div id="results"></div>
+    <input type="button" value="App" onclick="appClick();"/><br />
+    <input type="button" value="Todo" onclick="todoClick();"/><br />
+    <input type="button" value="Pages" onclick="pagesClick();"/><br/>
+    <input type="button" value="People" onclick="peopleClick();" /><br />
+    <h3>Todo List</h3>
+    <div id="todo"></div>
     <h3>Pages</h3>
     <div id="pages"></div>
     <h3>People</h3>
@@ -31,10 +35,21 @@
 
     <script src="scripts/index.js"></script>
     <script>
+        function appClick() {
+            m.module(document.getElementById('todo'), clearModule);
+            m.module(document.getElementById('pages'), clearModule);
+            m.module(document.getElementById('people'), clearModule);
+        }
 
-        m.module(document.getElementById('results'), todo);
-        m.module(document.getElementById('pages'), app);
-        m.module(document.getElementById('people'), person);
+        function todoClick() {
+            m.module(document.getElementById('todo'), todo);
+        }
+        function pagesClick() {
+            m.module(document.getElementById('pages'), app);
+        }
+        function peopleClick() {
+            m.module(document.getElementById('people'), person);
+        }
     </script>
 </body>
 </html>

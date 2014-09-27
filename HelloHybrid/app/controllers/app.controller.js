@@ -22,6 +22,9 @@ todo.controller = function () {
             this.description("");
         }
     }.bind(this);
+
+    this.onunload = function () {
+    };
 };
 
 person.controller = function () {

@@ -1,7 +1,8 @@
 ﻿m.route(document.body, "/", {
-    "/": home,
-    "/login": login,
-    "/dashboard": dashboard,
+    "/": app,
+    "/todo": todo,
+    "/person": person,
+    "/dashboard": dashboard
 });
 
 //a sample module
